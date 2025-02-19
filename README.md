@@ -74,8 +74,9 @@ su             # Troca para o usuário root
 su user        # Troca para um usuário específico
 whoami         # Mostra o usuário atual
 id             # Mostra detalhes do usuário
-adduser nome   # Adiciona um novo usuário
-passwd user    # Altera a senha de um usuário
+useradd nome   # Adiciona um novo usuário
+passwd nome    # Altera a senha de um usuário
+userdel -r -f nome   # Apaga o usuário e os diretorios que tem nele 
 usermod -aG sudo user  # Adiciona um usuário ao grupo sudo
 ```
 
