@@ -16,6 +16,8 @@ clear   # Limpa o terminal
 
 ```sh
 touch arquivo      # Cria um novo arquivo
+nano               # Abre um arquivo no editor nano
+vi                 # Abre um arquivo no editor vi
 rm -r diretório    # Remove diretórios e seus conteúdos
 find /caminho -name "*.txt"  # Encontra arquivos por nome
 locate arquivo     # Localiza um arquivo no sistema
