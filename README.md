@@ -5,14 +5,17 @@ ls      # Lista os arquivos e diretórios
 pwd     # Mostra o diretório atual
 cd      # Navega entre diretórios
 mkdir   # Cria um novo diretório
-rm      # Remove arquivos ou diretórios
+rmdir   # Remove diretórios
+rm      # Remove arquivos
 cp      # Copia arquivos ou diretórios
 mv      # Move ou renomeia arquivos e diretórios
 cat     # Exibe o conteúdo de um arquivo
 clear   # Limpa o terminal
+--help  # Pede ajuda 
 history # Lista todos os comandos utilizados pelo usuário
 !n      # Executa o comando de número n no histórico. Exemplo: !23
 !!      # Executa o último comando digitado
+./arquivo.sh  # Executa arquivo script 
 ```
 
 ## 📂 Gerenciamento de Arquivos
@@ -32,7 +35,7 @@ du -sh diretório   # Mostra o tamanho de um diretório
 
 ```sh
 chmod 755 arquivo        # Altera as permissões de um arquivo
-chown user:user arquivo  # Altera o proprietário de um arquivo
+chown dono:grupo arquivo  # Altera o proprietário de um arquivo
 ls -l                    # Lista arquivos com permissões detalhadas
 ```
 
@@ -74,10 +77,13 @@ su             # Troca para o usuário root
 su user        # Troca para um usuário específico
 whoami         # Mostra o usuário atual
 id             # Mostra detalhes do usuário
-useradd nome   # Adiciona um novo usuário
-passwd nome    # Altera a senha de um usuário
-userdel -r -f nome   # Apaga o usuário e os diretorios que tem nele 
-usermod -aG sudo user  # Adiciona um usuário ao grupo sudo
+useradd user   # Adiciona um novo usuário
+passwd user    # Altera a senha de um usuário
+userdel user   # Apaga o usuário 
+gpasswd -a user grupo  # Adiciona um usuário a um grupo
+gpasswd -d user grupo  # Remove um usuário de um grupo
+groupadd nome  # Cria um grupo
+groupdel nome  # Exclui um grupo 
 ```
 
 ## 📜 Logs e Monitoramento
