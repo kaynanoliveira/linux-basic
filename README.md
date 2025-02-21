@@ -7,6 +7,7 @@ cd      # Navega entre diretórios
 mkdir   # Cria um novo diretório
 rmdir   # Remove diretórios
 rm      # Remove arquivos
+rm -Rf diretorio  # Remove um diretório e tudo que tem nele
 cp      # Copia arquivos ou diretórios
 mv      # Move ou renomeia arquivos e diretórios
 cat     # Exibe o conteúdo de um arquivo
@@ -77,9 +78,9 @@ su             # Troca para o usuário root
 su user        # Troca para um usuário específico
 whoami         # Mostra o usuário atual
 id             # Mostra detalhes do usuário
-useradd user   # Adiciona um novo usuário
+useradd user   # Cria um novo usuário
 passwd user    # Altera a senha de um usuário
-userdel user   # Apaga o usuário 
+userdel -r user   # Apaga o usuário e remove o diretorio incial dele 
 gpasswd -a user grupo  # Adiciona um usuário a um grupo
 gpasswd -d user grupo  # Remove um usuário de um grupo
 groupadd nome  # Cria um grupo
@@ -92,5 +93,6 @@ groupdel nome  # Exclui um grupo
 dmesg                 # Exibe mensagens do kernel
 journalctl            # Exibe logs do sistema
 cat /var/log/syslog   # Exibe logs gerais do sistema
+cat /etc/group        # Exibe todos os grupos
 tail -f /var/log/auth.log  # Monitora o log de autenticação em tempo real
 ```
