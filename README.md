@@ -64,11 +64,11 @@ netstat -tulnp     # Mostra portas abertas e conexões ativas
 ## 📦 Gerenciamento de Pacotes (APT - Debian/Ubuntu)
 
 ```sh
-sudo apt update              # Atualiza a lista de pacotes disponíveis
-sudo apt upgrade             # Atualiza todos os pacotes instalados
-sudo apt install pacote      # Instala um pacote
-sudo apt remove pacote       # Remove um pacote
-sudo apt autoremove          # Remove pacotes desnecessários
+apt update              # Atualiza a lista de pacotes disponíveis
+apt upgrade             # Atualiza todos os pacotes instalados
+apt install pacote      # Instala um pacote
+apt remove pacote       # Remove um pacote
+apt autoremove          # Remove pacotes desnecessários
 ```
 
 ## 🛠️ Usuários e Grupos
