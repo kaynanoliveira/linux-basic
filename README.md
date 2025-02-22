@@ -15,7 +15,6 @@ clear   # Limpa o terminal
 --help  # Pede ajuda 
 history # Lista todos os comandos utilizados pelo usuário
 !n      # Executa o comando de número n no histórico. Exemplo: !23
-!!      # Executa o último comando digitado
 ./arquivo.sh  # Executa arquivo script 
 ```
 
